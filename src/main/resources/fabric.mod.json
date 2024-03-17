@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "randomlyrotatingflowerpots",
+	"version": "${version}",
+	"name": "RandomlyRotatingFlowerPots",
+	"description": "Makes flower pots rotatable by placing direction!",
+	"authors": [
+		"Hippopotamoss"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/randomlyrotatingflowerpots/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hippo.randompots.RandomlyRotatingFlowerPots"
+		],
+		"client": [
+			"net.hippo.randompots.RandomlyRotatingFlowerPotsClient"
+		],
+		"fabric-datagen": [
+			"net.hippo.randompots.RandomlyRotatingFlowerPotsDataGenerator"
+		]
+	},
+	"mixins": [
+		"randomlyrotatingflowerpots.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
